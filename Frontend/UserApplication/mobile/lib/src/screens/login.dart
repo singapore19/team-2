@@ -24,21 +24,21 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
 
-  final TextEditingController _driverIDFilter = new TextEditingController();
+  final TextEditingController _userIDFilter = new TextEditingController();
   final TextEditingController _passwordFilter = new TextEditingController();
-  String _driverID = "";
+  String _userID = "";
   String _password = "";
 
   _LoginPageState() {
-    _driverIDFilter.addListener(_driverIDlisten);
+    _userIDFilter.addListener(_userIDlisten);
     _passwordFilter.addListener(_passwordListen);
   }
 
-  void _driverIDlisten() {
-    if (_driverIDFilter.text.isEmpty) {
-      _driverID = "";
+  void _userIDlisten() {
+    if (_userIDFilter.text.isEmpty) {
+      _userID = "";
     } else {
-      _driverID = _driverIDFilter.text;
+      _userID = _userIDFilter.text;
     }
   }
 
@@ -69,7 +69,7 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget _buildBar(BuildContext context) {
     return new AppBar(
-      title: new Text("Drivers' Login "),
+      title: new Text("User Login"),
       centerTitle: true,
     );
   }
@@ -80,9 +80,9 @@ class _LoginPageState extends State<LoginPage> {
         children: <Widget>[
           new Container(
             child: new TextField(
-              controller: _driverIDFilter,
+              controller: _userIDFilter,
               decoration: new InputDecoration(
-                  labelText: 'Driver ID'
+                  labelText: 'User ID'
               ),
             ),
           ),
