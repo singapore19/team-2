@@ -1,0 +1,94 @@
+[
+  {
+    "user": {
+      "userID": "1",
+      "usename": "John",
+      "role": "1"
+    },
+    "starting": {
+      "address": "One @ Changi City, 1 Changi Business Park Central 1",
+      "postal": "486036"
+    },
+    "destination": {
+      "address": "80 Stamford Rd",
+      "postal": "178902"
+    },
+    "type": "delivery",
+    "msc": {
+      "volume": "100",
+      "number": "1",
+      "time": {
+        "start": "10:00"
+      }
+    }
+  },
+    {
+    "user": {
+      "userID": "1",
+      "usename": "John",
+      "role": "1"
+    },
+    "starting": {
+      "address": "One @ Changi City, 1 Changi Business Park Central 1",
+      "postal": "486036"
+    },
+    "destination": {
+      "address": "2 Jurong East Central 1",
+      "postal": "609731"
+    },
+    "type": "delivery",
+    "msc": {
+      "volume": "100",
+      "number": "1",
+      "time": {
+        "start": "10:00"
+      }
+    }
+  },
+  {
+    "user": {
+      "userID": "1",
+      "usename": "John",
+      "role": "1"
+    },
+    "starting": {
+      "address": "One @ Changi City, 1 Changi Business Park Central 1",
+      "postal": "486036"
+    },
+    "destination": {
+      "address": "Blk 106 Serangoon North Avenue",
+      "postal": "550106"
+    },
+    "type": "delivery",
+    "msc": {
+      "volume": "100",
+      "number": "1",
+      "time": {
+        "start": "10:00"
+      }
+    }
+  },
+  {
+    "user": {
+      "userID": "2",
+      "usename": "Javier",
+      "role": "1"
+    },
+    "starting": {
+      "address": "One @ Changi City, 1 Changi Business Park Central 1",
+      "postal": "486036"
+    },
+    "destination": {
+      "address": "Blk 106 Serangoon North Avenue",
+      "postal": "550106"
+    },
+    "type": "delivery",
+    "msc": {
+      "volume": "70",
+      "number": "1",
+      "time": {
+        "start": "13:00"
+      }
+    }
+  }
+]
