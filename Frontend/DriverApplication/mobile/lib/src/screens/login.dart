@@ -114,7 +114,7 @@ class _LoginPageState extends State<LoginPage> {
       );
   }
 
-  // These functions can self contain any user auth logic required, they all have access to _email and _password
+  // These functions can self contain any user auth logic required, they all have access to _driverID and _password
 
   void _loginPressed (BuildContext context) {
     Navigator.push(context, CupertinoPageRoute(builder: (context) => Schedule()));
