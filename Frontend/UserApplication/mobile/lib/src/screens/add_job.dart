@@ -171,7 +171,7 @@ class _AddJobState extends State<AddJob> {
 
   Widget _buildButtons(context) {
     return new Container(
-      child: new Column(
+      child: new Row(
         children: <Widget>[
           new RaisedButton(
             child: new Text('Submit job'),
