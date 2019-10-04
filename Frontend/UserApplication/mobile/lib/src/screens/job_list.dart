@@ -1,35 +1,41 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
+class JobList extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => new _JobList();
 }
 
-class MyApp extends StatelessWidget {
+class _JobList extends State<JobList> {
   @override
   Widget build(BuildContext context) {
     final title = 'Submitted Jobs';
 
-    return MaterialApp(
-      title: title,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(title),
-        ),
-        body: GridView.count(
-          // Create a grid with 2 columns. If you change the scrollDirection to
-          // horizontal, this produces 2 rows.
-          crossAxisCount: 1,
-          // Generate 100 widgets that display their index in the List.
-          children: List.generate(100, (index) {
-            return Center(
-              child: Text(
-                'Item $index',
-                style: Theme.of(context).textTheme.headline,
-              ),
-            );
-          }),
-
-        ),
+    var jsonString = [{"type": "delivery", "addr": "one @ changi", "time": "14:00"}];
+    List<Widget> list = [];
+    for (int i =  0; i < jsonString.length; i++) {
+      list.add(
+        new Container(
+          decoration: BoxDecoration(
+            border: Border(bottom: BorderSide())
+          ),
+          child: new Column(
+            children: <Widget>[
+              Text(jsonString[i]['addr']),
+              SizedBox(height: 5,),
+              Text(jsonString[i]['type']),
+              SizedBox(height: 5,),
+              Text(jsonString[i]['time'])
+            ]
+          )
+        )
+      );
+    }
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(title),
+      ),
+      body: ListView(
+        children: list
       ),
     );
   }

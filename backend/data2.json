@@ -1,0 +1,29 @@
+{
+  "destination": [
+    {
+      "postal": "550106",
+      "address": "Blk 106 Serangoon North Avenue",
+      "time": "08:30",
+      "remark": "Job 1 assigned"
+    },
+    {
+      "postal": "609731",
+      "address": "2 Jurong East Central 1",
+      "time": "11:30",
+      "remark": "Job 2 assigned"
+    },
+    {
+      "postal": "178902",
+      "address": "80 Stamford Rd",
+      "time": "14:30",
+      "remark": "Job 3 assigned"
+    },
+    {
+      "postal": "486036",
+      "address": "One @ Changi City, 1 Changi Business Park Central 1",
+      "time": "17:00",
+      "remark": "Job 4 assigned"
+    }
+  ],
+  "distance": "72.4"
+}
